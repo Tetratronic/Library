@@ -8,11 +8,10 @@ showButton.addEventListener("click", () => {
 });
 
 confirmButton.addEventListener('click', (event) => {
-    const formdata = new FormData(document.getElementById('forme'));
     event.preventDefault();
+    const formdata = new FormData(document.getElementById('forme'));
     let data = [...formdata.values()];
-    console.log(data);
-    console.log('test');
+    addBook(...data)
 })
 
 let shelf = [];
@@ -27,4 +26,24 @@ function Book(title, author, pages, read){
 function addBook(title, author, pages, read){
     let book = new Book(title,author,pages,read);
     shelf.push(book);
+    renderBook();
 };
+
+function renderBook(b){
+        let bookcard = document.createElement('div');
+        bookcard.classList.add('book');
+        let booktitle = document.createElement('h2');
+        booktitle.textContent = shelf[b].title;
+        bookcard.appendChild(booktitle);
+        let bookauthor = document.createElement('p')
+        bookauthor.textContent = shelf[b].author;
+        bookcard.appendChild(bookauthor);
+        let bookpages = document.createElement('p');
+        bookpages.textContent = "Pages: " + shelf[b].pages;
+        bookcard.appendChild(bookpages);
+        let bookread = document.createElement('p');
+        bookread.textContent = "Read" + shelf[b].read;
+        bookcard.appendChild(bookread);
+        bookshelf.appendChild(bookcard);
+    }
+
