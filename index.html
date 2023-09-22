@@ -27,17 +27,17 @@
         <form id="forme">
             <p>
                 <label for="booktitle">Title</label>
-                <input type="text" name="booktitle"><br>
+                <input type="text" name="booktitle" required><br>
                 <label for="bookauthor">Author</label>
-                <input type="text" name="bookauthor" id="bookauthor">
+                <input type="text" name="bookauthor" id="bookauthor" required>
                 <label for="bookpages">Pages</label>
-                <input type="number" name="bookpages" id="bookpages">
+                <input type="number" name="bookpages" id="bookpages" required>
                 <label for="boolread">Have you read the book ?</label>
-                <input type="checkbox" name="boolread" id="boolread">
+                <input type="checkbox" name="boolread" id="boolread" required>
             </p>
             <div>
                 <button value="cancel" formmethod="dialog">Cancel</button>
-                <button type="submit" id="confirmBtn">Confirm</button>
+                <button id="confirmBtn" >Confirm</button>
               </div>
         </form>
     </dialog>

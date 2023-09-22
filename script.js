@@ -8,10 +8,16 @@ showButton.addEventListener("click", () => {
 });
 
 confirmButton.addEventListener('click', (event) => {
+    if(!dialogForm.firstElementChild.checkValidity()){
+        dialogForm.firstElementChild.reportValidity();
+        return;
+    }
     event.preventDefault();
+    console.log('test');
     const formdata = new FormData(document.getElementById('forme'));
     let data = [...formdata.values()];
     addBook(...data)
+    dialogForm.close();
 })
 
 let shelf = [];
@@ -29,7 +35,8 @@ function addBook(title, author, pages, read){
     renderBook();
 };
 
-function renderBook(b){
+function renderBook(){
+        let b = shelf.length - 1;
         let bookcard = document.createElement('div');
         bookcard.classList.add('book');
         let booktitle = document.createElement('h2');
