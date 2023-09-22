@@ -38,6 +38,7 @@ function addBook(title, author, pages, read){
 function renderBook(){
         let b = shelf.length - 1;
         let bookcard = document.createElement('div');
+        bookcard.dataset.num = b;
         bookcard.classList.add('book');
         let booktitle = document.createElement('h2');
         booktitle.textContent = shelf[b].title;
