@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="top-bar">
+        <h1 class="logo">Odin Library</h1>
+        <li class="menu-items">
+            <ul class="item">Login</ul>
+            <ul class="item">About</ul>
+            <ul class="item"></ul>
+        </li>
+    </nav>    
+    <div class="books-cotainer">
+        <div class="book">
+            <h2 class="title">La Peste</h2>
+            <p>Author: Albert Camus</p>
+            <p>Pages: 205</p>
+        </div>
+    </div>
+    <dialog id="dialogue">
+        <form id="forme">
+            <p>
+                <label for="booktitle">Title</label>
+                <input type="text" name="booktitle"><br>
+                <label for="bookauthor">Author</label>
+                <input type="text" name="bookauthor" id="bookauthor">
+                <label for="bookpages">Pages</label>
+                <input type="number" name="bookpages" id="bookpages">
+                <label for="boolread">Have you read the book ?</label>
+                <input type="checkbox" name="boolread" id="boolread">
+            </p>
+            <div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+              </div>
+        </form>
+    </dialog>
+    <button type="submit" class="add-book">New Book</button>
+</body>
+</html>
