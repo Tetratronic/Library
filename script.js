@@ -63,6 +63,5 @@ function renderBook(){
         const num = this.parentElement.dataset.num;
         this.parentElement.remove();
         shelf.splice(num, 1);
-        console.log(shelf);
     };
 
