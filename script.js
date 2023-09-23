@@ -50,8 +50,19 @@ function renderBook(){
         bookpages.textContent = "Pages: " + shelf[b].pages;
         bookcard.appendChild(bookpages);
         let bookread = document.createElement('p');
-        bookread.textContent = "Read" + shelf[b].read;
+        bookread.textContent = "Read: " + (shelf[b].read ? "Yes" : "No");
         bookcard.appendChild(bookread);
+        let removeBtn = document.createElement('Button');
+        removeBtn.textContent = 'Remove'
+        bookcard.appendChild(removeBtn);
+        removeBtn.addEventListener('click', removeElement);
         bookshelf.appendChild(bookcard);
     }
+
+    function removeElement(){
+        const num = this.parentElement.dataset.num;
+        this.parentElement.remove();
+        shelf.splice(num, 1);
+        console.log(shelf);
+    };
 
