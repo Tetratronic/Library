@@ -1,3 +1,13 @@
+button{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
+}
 .menu-items{
     list-style-type: none;
     margin: 0;
@@ -14,8 +24,39 @@ li{
     justify-content: space-between;
     padding: 0px;
 }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .books-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+
+.book{
+    text-align: center;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.add-book{
+    width: 130px;
+    height: 50px;
+    background-color: aliceblue;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 16px;
+    font-weight: 700;
 }
