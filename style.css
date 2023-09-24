@@ -1,3 +1,7 @@
+h1{
+    font-family: 'Bungee Shade', cursive;
+}
+
 button{
     background-color: transparent;
     border: none;
@@ -233,6 +237,7 @@ li{
     width: 200px;
     height: 350px;
 }
+
 
 #forme p{
     display: flex;
