@@ -15,7 +15,12 @@
             <li class="item">About</li>
         </ul>
     </nav>    
+    <hr>
     <div class="main">
+        <div class='buttonWrap add-book'>
+            <button class='theButton particleButton front '><span id="plussign"><img src="./letters/plus.svg"></span></button>
+            <div class='theButton particleButton particles'></div>
+        </div>
         <div class="books-container">
             <div class="book">
                 <h2 class="title">The Art and Craft of Problem Solving</h2>
@@ -24,10 +29,7 @@
             </div>
 
         </div>
-        <div class='buttonWrap add-book'>
-            <button class='theButton particleButton front '><span id="plussign"><img src="./letters/plus.svg"></span></button>
-            <div class='theButton particleButton particles'></div>
-        </div>
+
 
     </div>
     <dialog id="dialogue">
@@ -42,7 +44,7 @@
                 <label for="boolread">Have you read the book ?</label>
                 <input type="checkbox" name="boolread" id="boolread">
             </p>
-            <div>
+            <div id="form-buttons">
                 <button value="cancel" formmethod="dialog">Cancel</button>
                 <button id="confirmBtn" >Confirm</button>
               </div>
