@@ -48,7 +48,6 @@ li{
     width: 200px;
     height: 250px;
     padding: 20px;
-    border-radius: 20px;
     font-size: 1.2rem;
 }
 
@@ -65,7 +64,7 @@ li{
 	z-index: 1;
 	padding: 0em;
 	position: absolute;
-	width: 70px;
+	width: 200px;
 	height: 70px;
 	left: 50%;
 	top: 50%;
@@ -73,7 +72,6 @@ li{
 	transform: translate(-50%, -50%) scale(1, 1);
 	pointer-events: all;
     cursor:auto;
-	border-radius: 50%;
 	box-sizing: border-box;
 	transition: transform cubic-bezier(0,1.69,.66,1.69) 0.5s, background-color 0s ease-out ;
 }
@@ -85,8 +83,8 @@ li{
     position: absolute;
     top: 50%;
     left: 50%;  
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     transform: translate(-50%, -50%);
 }
 
@@ -114,9 +112,9 @@ li{
 
 .particleButton:active {
 	transition: background-color linear 0.1s, background-size ease-in-out 0.1s,
-		background-position ease-in-out 0.1s, transform cubic-bezier(.17,.67,.83,.67) 1s;
+		background-position ease-in-out 0.1s, transform cubic-bezier(.17,.67,.83,.67) 0.3s;
         background-color: black;
-	transform: translate(-50%, -50%) scale(0.1, 0.1);
+	transform: translate(-50%, -50%) scale(0, 0.3);
 } 
 .particleButton:active ~ .particles::after {
 	animation: none;
@@ -212,17 +210,16 @@ li{
         background-position: 862px 548px,418px 399px,449px 468px,432px 556px,525px 497px,588px 421px,275px 1049px,452px 486px,768px 887px,209px 933px,559px 456px,511px 520px,562px 516px,-42px 277px,437px 499px,356px 943px,155px 85px,239px 778px,486px 411px,460px 563px,478px 623px,476px 532px,107px 311px,348px 211px,593px 66px,412px 462px,494px 605px,648px 194px,985px 336px,491px 393px;
     }} 
 .theButton.particles::after {
-    left: -455px;
+    left: -430px;
     top: -455px;
     min-width: 1000px;
     min-height: 1000px;
 }
 .theButton {
-    width: 90px;
-    height: 90px;
+    width: 140px;
+    height: 65px;
     background: rgb(255, 255, 255);
     border: 0px solid black;
-    border-radius: 50px;
 }
 
 .theButton.front{
@@ -235,7 +232,6 @@ li{
 #dialogue{
     width: 200px;
     height: 350px;
-    border-radius: 20px;
 }
 
 #forme p{
@@ -248,7 +244,6 @@ input[type=text]{
     height: 25px;
     border: 3px solid black;
     padding:0px 10px;
-    border-radius: 10px;
 }
 
 input:focus{
