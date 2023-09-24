@@ -1,3 +1,16 @@
+html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 h1{
     font-family: 'Bungee Shade', cursive;
 }
@@ -26,7 +39,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
+    padding: 10px 75px 0px 75px;
     height: 40px;
 }
 
@@ -34,6 +47,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     gap: 20px;
 }
 
@@ -118,7 +132,10 @@ li{
 	transition: background-color linear 0.1s, background-size ease-in-out 0.1s,
 		background-position ease-in-out 0.1s, transform cubic-bezier(.17,.67,.83,.67) 0.3s;
         background-color: black;
-	transform: translate(-50%, -50%) scale(0, 0.3);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
 } 
 .particleButton:active ~ .particles::after {
 	animation: none;
@@ -256,4 +273,24 @@ input:focus{
     outline-style: dashed;
     outline-color: rgb(0, 0, 0);
     outline-width: 3px;
+}
+
+/* footer */
+footer{
+    margin-top: auto;
+    border-top: 1px solid black;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+}
+h6{
+    margin: 0;
+}
+.footer-text{
+    font-family: 'Libre Barcode 128 Text', cursive;
+    margin: 0;
 }
