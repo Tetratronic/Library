@@ -31,8 +31,25 @@ button{
     padding: 0;
 }
 
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 li{
     display: inline;
+}
+
+.login-button{
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.login-button:hover{
+    background-color: black;
+    color: white;
+    
 }
 
 .top-bar{
@@ -277,6 +294,7 @@ input:focus{
 
 /* footer */
 footer{
+    background-size: contain;
     margin-top: auto;
     border-top: 1px solid black;
 }
