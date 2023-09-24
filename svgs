@@ -1,0 +1,32 @@
+.theButton.animated::after { 
+    animation: theButtonAnimation linear 12.05s forwards;
+    background-image: 
+        url("./letters/a.svg"),
+        url("./letters/b.svg"),
+        url("./letters/c.svg"),
+        url("./letters/d.svg"),
+        url("./letters/e.svg"),
+        url("./letters/f.svg"),
+        url("./letters/g.svg"),
+        url("./letters/h.svg"),
+        url("./letters/i.svg"),
+        url("./letters/j.svg"),
+        url("./letters/k.svg"),
+        url("./letters/l.svg"),
+        url("./letters/m.svg"),
+        url("./letters/n.svg"),
+        url("./letters/o.svg"),
+        url("./letters/p.svg"),
+        url("./letters/q.svg"),
+        url("./letters/r.svg"),
+        url("./letters/s.svg"),
+        url("./letters/t.svg"),
+        url("./letters/u.svg"),
+        url("./letters/v.svg"),
+        url("./letters/w.svg"),
+        url("./letters/x.svg"),
+        url("./letters/y.svg"),
+        url("./letters/z.svg"),
+        url("./letters/a.svg"),
+        url("./letters/b.svg");
+} 

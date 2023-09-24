@@ -2,6 +2,16 @@ const bookshelf = document.querySelector('.books-container');
 const showButton = document.querySelector('.add-book');
 const dialogForm = document.querySelector('#dialogue');
 const confirmButton = document.querySelector('#confirmBtn');
+window.onload = () => {
+    document.querySelectorAll("button.particleButton").forEach(btn => {
+        let btnBg = btn.parentNode.querySelector(".particles")
+        let initalListener = () => {
+            btnBg.classList.add("animated")
+            btn.removeEventListener("click", initalListener)
+        }
+        btn.addEventListener("click", initalListener)
+    })
+}
 
 showButton.addEventListener("click", () => {
     dialogForm.showModal();
