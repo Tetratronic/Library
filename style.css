@@ -267,8 +267,8 @@ li{
         background-position: 862px 548px,418px 399px,449px 468px,432px 556px,525px 497px,588px 421px,275px 1049px,452px 486px,768px 887px,209px 933px,559px 456px,511px 520px,562px 516px,-42px 277px,437px 499px,356px 943px,155px 85px,239px 778px,486px 411px,460px 563px,478px 623px,476px 532px,107px 311px,348px 211px,593px 66px,412px 462px,494px 605px,648px 194px,985px 336px,491px 393px;
     }} 
 .theButton.particles::after {
-    left: -430px;
-    top: -455px;
+    left: -450px;
+    top: -462px;
     min-width: 1000px;
     min-height: 1000px;
 }
