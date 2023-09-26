@@ -101,6 +101,19 @@ li{
     font-size: 1.2rem;
 }
 
+.readStatusBtn{
+    margin:auto;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: crimson;
+    display: block;
+}
+
+.readStatusBtn.read{
+    background-color: aqua;
+}
+
 /* EXPLOSIVE LETTERS BUTTON ANIMATION */
 
 .buttonWrap {
