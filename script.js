@@ -56,7 +56,7 @@ function renderBook(){
         bookcard.dataset.num = b;
         bookcard.classList.add('book');
         let removeBtn = document.createElement('Button');
-        removeBtn.textContent = ''
+        removeBtn.textContent = '+'
         bookcard.appendChild(removeBtn);
         removeBtn.classList.add('remove-button')
         removeBtn.addEventListener('click', removeElement);
@@ -74,18 +74,14 @@ function renderBook(){
         bookread.textContent = (shelf[b].read ? "Read" : "Not Read");
         bookread.classList.add((shelf[b].read ? ('read') :'notread'))
         bookread.addEventListener('click', readToggle)
-        bookcard.appendChild(bookread);
-        
+        bookcard.appendChild(bookread);  
         bookshelf.appendChild(bookcard);
     }
 
     function readToggle(){
-        const num = this.parentElement.dataset.num;
         this.classList.toggle('read');
-        this.classList.toggle('notread')
-        shelf[num].read ? (shelf[num].read = false, this.textContent='Not Read'): (shelf[num].read = 'yes', this.textContent='Read');
-        console.log(shelf[num]);
-
+        this.classList.toggle('notread');
+        this.textContent === 'Read' ? (this.textContent = 'Not Read') : (this.textContent = 'Read');
     }
 
     function removeElement(){

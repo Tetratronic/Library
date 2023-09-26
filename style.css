@@ -127,8 +127,6 @@ li{
     padding: 20px;
     font-size: 1.2rem;
     position: relative;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .book-title{
@@ -164,32 +162,17 @@ li{
 
 .remove-button{
     position: absolute;
-    right: 1px;
-    top: 2px;
-    font-size: 35px;
+    right: -8px;
+    top: -8px;
+    font-size: 32px;
+    font-weight: 500;
     width: 20px;
     height: 20px;
     padding: 0;
     display: inline-block;
-}
-.remove-button:hover{
-    background-color: crimson;
-}
-
-.remove-button:after {
-    font-family:fantasy;
+    transform: rotate(45deg);
     color: crimson;
-    position: absolute;
-    top: -10px;
-    left: 0px;
-    content: '+';
-    transform: rotate(-45deg);
-  }
-
-  .remove-button:hover::after{
-    color: white;
 }
-
 /* EXPLOSIVE LETTERS BUTTON ANIMATION */
 
 .buttonWrap {
