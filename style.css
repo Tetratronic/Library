@@ -364,7 +364,7 @@ li{
         font-size: 1em; /* Set a smaller font size for phone screens */
     }
     .theButton.particles::after {
-        visibility: hidden;
+        animation: none;
         min-width: 0;
         min-height: 0;
     }
