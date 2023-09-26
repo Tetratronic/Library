@@ -11,8 +11,15 @@ body{
     flex-direction: column;
 }
 
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 h1{
-    display: inline-block;
+    display: inline;
     height: 50px;
     margin: 0;
     font-family: 'Bungee Shade', cursive;
@@ -50,6 +57,12 @@ li{
     height: 100%;
 }
 
+.img-logo{
+    display: inline;
+    width: 45px;
+    height: 45px;
+}
+
 .login-button{
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -69,7 +82,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 25px 0px 75px;
+    padding: 0px 25px 0px 25px;
     height: 50px;
     border-bottom: 1px solid black;
 
@@ -93,25 +106,75 @@ li{
 }
 
 .book{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     border: 1px solid black;
     width: 200px;
     height: 250px;
     padding: 20px;
     font-size: 1.2rem;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.readStatusBtn{
+.book-title{
+    word-wrap: break-word;
+    margin: 0;
+}
+
+
+
+.notread{
     margin:auto;
     width: 100px;
     height: 50px;
-    color: white;
-    background-color: crimson;
+    color: crimson;
+    border: 1px solid crimson;
     display: block;
 }
 
-.readStatusBtn.read{
-    background-color: aqua;
+.read{
+    border: none;
+    margin:auto;
+    width: 100px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: block;
+}
+
+
+
+
+
+
+.remove-button{
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    font-size: 35px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: inline-block;
+}
+.remove-button:hover{
+    background-color: crimson;
+}
+
+.remove-button:after {
+    color: crimson;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    content: '+';
+    transform: rotate(-45deg);
+  }
+
+  .remove-button:hover::after{
+    color: white;
 }
 
 /* EXPLOSIVE LETTERS BUTTON ANIMATION */
@@ -319,7 +382,7 @@ li{
     gap: 10px;
 }
 
-input[type=text]{
+input[type='text'], input[type='number']{
     height: 25px;
     border: 3px solid black;
     padding:0px 10px;
@@ -327,9 +390,9 @@ input[type=text]{
 
 input:focus{
     outline-offset: 2px;
-    outline-style: dashed;
+    outline-style:solid;
     outline-color: rgb(0, 0, 0);
-    outline-width: 3px;
+    outline-width: 1px;
 }
 
 #form-buttons{
