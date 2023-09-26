@@ -2,6 +2,7 @@ const bookshelf = document.querySelector('.books-container');
 const showButton = document.querySelector('.add-book');
 const dialogForm = document.querySelector('#dialogue');
 const confirmButton = document.querySelector('#confirmBtn');
+const cancelBtn = document.querySelector('#cancelbtn')
 window.onload = () => {
     document.querySelectorAll("button.particleButton").forEach(btn => {
         let btnBg = btn.parentNode.querySelector(".particles")
@@ -15,6 +16,10 @@ window.onload = () => {
 
 showButton.addEventListener("click", () => {
     dialogForm.showModal();
+});
+
+cancelBtn.addEventListener("click", () => {
+    dialogForm.close();
 });
 
 confirmButton.addEventListener('click', (event) => {
