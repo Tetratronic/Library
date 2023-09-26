@@ -11,6 +11,14 @@ body{
     flex-direction: column;
 }
 
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h4{
+    font-family: 'Gloock', serif;
+}
+
 .logo-container{
     display: flex;
     justify-content: center;
@@ -19,6 +27,7 @@ body{
 }
 
 h1{
+
     display: inline;
     height: 50px;
     margin: 0;
@@ -30,12 +39,15 @@ h1{
 }
 
 button{
+
     background-color: transparent;
     border: none;
     margin: 0;
     padding: 0;
     text-align: inherit;
-    font: inherit;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 0;
     appearance: none;
     cursor: pointer;
@@ -165,6 +177,7 @@ li{
 }
 
 .remove-button:after {
+    font-family:fantasy;
     color: crimson;
     position: absolute;
     top: -10px;
@@ -434,6 +447,7 @@ footer{
 }
 h6{
     margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .footer-text{
     font-family: 'Libre Barcode 128 Text', cursive;
