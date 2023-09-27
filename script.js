@@ -19,6 +19,7 @@ showButton.addEventListener("click", () => {
 });
 
 cancelBtn.addEventListener("click", () => {
+    dialogForm.firstElementChild.reset();
     dialogForm.close();
 });
 
@@ -28,10 +29,10 @@ confirmButton.addEventListener('click', (event) => {
         return;
     }
     event.preventDefault();
-    console.log('test');
     const formdata = new FormData(document.getElementById('forme'));
     let data = [...formdata.values()];
     addBook(...data)
+    dialogForm.firstElementChild.reset();
     dialogForm.close();
 })
 
